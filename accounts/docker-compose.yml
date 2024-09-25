@@ -1,0 +1,40 @@
+services:
+  accounts:
+    image: "mohdrafiq2000/accounts:s6"
+    container_name: accounts-ms
+    ports:
+      - "8080:8080"
+    deploy:
+      limits:
+        memory:
+    networks:
+      - AbcBank
+
+  loans:
+    image: "mohdrafiq2000/loans:s6"
+    container_name: loans-ms
+    ports:
+      - "8090:8090"
+    deploy:
+      limits:
+        memory: 700m
+    networks:
+      - AbcBank
+
+  cards:
+    image: "mohdrafiq2000/cards:s6"
+    container_name: cards-ms
+    ports:
+      - "9000:9000"
+    deploy:
+      limits:
+        memory: 700m
+    networks:
+      - AbcBank
+
+networks:
+  AbcBank:
+    driver: "bridge"
+
+
+
