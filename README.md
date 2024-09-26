@@ -7,10 +7,7 @@ This project is a **Banking Web Application** built using **Spring Boot** and fo
 - [Microservices Architecture](#microservices-architecture)
 - [Technologies Used](#technologies-used)
 - [Prerequisites](#prerequisites)
-- [Running the Application](#running-the-application)
-- [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Overview
 
@@ -49,8 +46,8 @@ The project is split into the following services:
 - **Spring Cloud Gateway** for API Gateway.
 - **Spring Data JPA** for database interactions.
 - **MySQL/PostgreSQL** as the database.
-- **Eureka** for service discovery (Optional, if used).
 - **Feign Client** for internal service-to-service communication.
+- **Kafka and RabbitMq** for event driven communication. 
 - **Docker** for containerization.
 - **Maven** for dependency management.
 
@@ -63,11 +60,4 @@ Before you begin, ensure you have the following installed:
 - Docker (Optional)
 - MySQL or PostgreSQL
 
-## Running the Application
 
-To run the application locally:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/MohdRafiq/bank-service-microservices.git
-   cd bank-service-microservices
