@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/SpringEurekaServer/pom.xml" />
         <option value="$PROJECT_DIR$/Gateway-for-the-BankService/pom.xml" />
         <option value="$PROJECT_DIR$/GatewayServer/pom.xml" />
+        <option value="E:/bank/microservices/section_14/message/pom.xml" />
       </list>
     </option>
   </component>
